@@ -3,15 +3,7 @@ import requests
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBoxLayout, QWidget, QInputDialog, QMessageBox
 
 # Firebase configuration
-firebase_config = {
-    "apiKey": "YOUR_API_KEY",
-    "authDomain": "YOUR_AUTH_DOMAIN",
-    "databaseURL": "YOUR_DATABASE_URL",
-    # Add other Firebase project credentials here
-}
-
-# Firebase URLs
-firebase_url = firebase_config["https://pfa1-3687a-default-rtdb.europe-west1.firebasedatabase.app/"]
+firebase_url = "https://pfa1-3687a-default-rtdb.europe-west1.firebasedatabase.app"
 cameras_endpoint = f"{firebase_url}/cameras.json"
 
 # PyQt5 application
