@@ -34,6 +34,18 @@ enKnown,MyfoldListName=enKnownANDNames
 print('end load encoding file')
 print(len(MyfoldList))
 print(MyfoldListName)
+def capture_image():
+    ret, frame = cap.read()
+    if ret:
+        _, buffer = cv2.imencode('.jpg', frame)
+        image_data = buffer.tobytes()
+        bucket = storage.bucket()
+        timestamp = int(time.time())
+        filename = f"image_{timestamp}.jpg"
+        blob = bucket.blob(filename)
+        blob.upload_from_string(image_data, content_type='image/jpeg'
+    else:
+        print("Failed to capture image")
 while True:
     success,img=cap.read()
     imgS=cv2.resize(img, (0, 0), None, 0.25, 0.25)
