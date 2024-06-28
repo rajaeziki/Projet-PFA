@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>504</width>
+    <width>535</width>
     <height>260</height>
    </rect>
   </property>
@@ -20,8 +20,11 @@
    <string>Face Recognition App</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resource.qrc">
+   <iconset>
     <normaloff>:/icon/icon.png</normaloff>:/icon/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 85, 127);</string>
   </property>
   <widget class="QLabel" name="logolabel">
    <property name="geometry">
@@ -32,11 +35,14 @@
      <height>151</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 85, 127);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="resource.qrc">:/logo/logo.png</pixmap>
+    <pixmap>:/logo/logo.png</pixmap>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
@@ -55,11 +61,20 @@
        <widget class="QLabel" name="filelabel">
         <property name="font">
          <font>
-          <family>Calibri</family>
-          <pointsize>14</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <family>Leelawadee</family>
+          <pointsize>12</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 85, 127);font-size:14pt;
+border-radius:20px;
+font: 36pt &quot;MS Reference Sans Serif&quot;;
+color:rgb(255, 255, 255);
+background-color: rgb(0, 85, 127);
+
+font: 12pt &quot;Leelawadee&quot;;</string>
         </property>
         <property name="text">
          <string> Start Face Recognition App</string>
@@ -72,9 +87,19 @@
      <widget class="QPushButton" name="runButton">
       <property name="font">
        <font>
-        <family>Arial</family>
-        <pointsize>13</pointsize>
+        <family>Leelawadee</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 85, 127);font-size:14pt;
+border-radius:20px;
+
+background-color: rgb(255, 255, 255);
+
+font: 12pt &quot;Leelawadee&quot;;</string>
       </property>
       <property name="text">
        <string>Start</string>

@@ -25,8 +25,7 @@ def main():
         blob.download_to_filename(file_path)
     imgpathlist = os.listdir(MyFoldimg)
     print(imgpathlist)
-    MyfoldListName = []
-    MyfoldList = []
+
     for el in imgpathlist:
         filename = os.path.join(MyFoldimg, el)
         MyfoldList.append(cv2.imread(filename))
